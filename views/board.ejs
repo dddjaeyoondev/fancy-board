@@ -1,0 +1,40 @@
+<!-- views/board.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Fancy Board - Board</title>
+</head>
+<body>
+  <header>
+    <h1>Fancy Board</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/board">Board</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="board">
+      <h2>Bulletin Board</h2>
+      <% if (posts.length > 0) { %>
+        <ul class="post-list">
+          <% posts.forEach((post) => { %>
+            <li class="post">
+              <h3><%= post.title %></h3>
+              <p><%= post.content %></p>            
+              <a href="/delete/<%= post.id %>">Delete</a>            
+            </li>
+          <% }); %>
+        </ul>
+      <% } else { %>
+        <p>No posts available.</p>
+      <% } %>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* public/styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #006241;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  nav {
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
+  
+  nav ul {
+  
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 버튼 간의 간격을 조정하는 값 */
+    padding: 0;
+  }
+  
+  nav a {
+  
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px; /* 버튼 내부의 여백 값 수정 */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: #006241;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .board {
+    background-color: white;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
